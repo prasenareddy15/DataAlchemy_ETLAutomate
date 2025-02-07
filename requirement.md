@@ -36,7 +36,26 @@ stringified_columns: A dictionary of columns where each key is a column name and
 colDate: A list of column names that should be treated as dates.
 ### 3. .env
 A file containing database connection details. This file is used to securely store sensitive information.
-### 4. Dependencies
+### 4 You can use Windows Task Scheduler to execute this .bat file daily.
+Steps to Schedule:
+#### Open Task Scheduler:
+Press Win + R, type taskschd.msc, and press Enter.
+#### Create a New Task:
+Click on "Create Basic Task" on the right panel.
+Give your task a name (e.g., "Run Data Transformation Script Daily") and optionally add a description.
+#### Set the Trigger:
+Choose "Daily" as the trigger and set the time you want the script to run.
+#### Set the Action:
+Select "Start a Program."
+Browse to the .bat file you created earlier.
+#### Finalize and Save:
+Review the summary and click "Finish."
+#### Additional Settings (Optional):
+1) To ensure the task runs even if you're logged out:
+2) Go to the task's properties.
+3) Under the "General" tab, select "Run whether user is logged on or not."
+4) Check "Do not store password" for higher security.
+### 5. Dependencies
 ## To run the script, the following libraries and tools are required:
 1) Python Libraries
 2) sqlalchemy
