@@ -1,0 +1,19 @@
+{
+    "Chg_array": {
+      "destination_table_name":"Chg_array_extracted" ,
+      "stringified_columns": {
+        "chgcd_gl": 5,
+        "chgcd_date": 3
+      },
+      "colDate": ["chgcd_date"]
+    },
+    "SourceTable": {
+      "destination_table_name":"SourceTable_extracted" ,
+      "stringified_columns": {
+        "chgcd_gl": 3,
+        "chgcd_rcc": 3,
+        "chgcd_rccdt": 3
+      },
+      "colDate": ["chgcd_rccdt"]
+    }
+}
